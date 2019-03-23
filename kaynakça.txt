@@ -1,0 +1,8 @@
+https://stackoverflow.com/questions/22955621/error-type-list-does-not-take-parameters	----java.awt.List yerine java.util.List;
+https://www.codeproject.com/Articles/117037/WPF-Jigsaw-Puzzle		--güzel örnek
+https://stackoverflow.com/questions/13625891/cut-an-image-into-9-pieces-c-sharp
+http://web.mst.edu/~chaman/courses/CS342/Demos/11IconsMenusDemoIF/IconsDemo.java	----how can I take ImageIcon from button
+https://it.toolbox.com/question/saving-an-image-file-in-java-060810	-----Image -> Buffrred Image
+https://eyupdalan.wordpress.com/2011/05/24/javada-dosya-okuma-yazma-ve-jfilechooser-ile-joptionpane-kullanimi/	----dosya sec
+https://gist.github.com/madan712/3672616	-----jigsaw resim bölme
+https://dessaskod.files.wordpress.com/2018/05/bolum09dosya-klasor-islemleri.pdf		---dosya iþlemleri
