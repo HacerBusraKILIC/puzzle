@@ -302,12 +302,19 @@ public class puzzleAna extends javax.swing.JFrame {
     private BufferedImage imageControl(BufferedImage originalImage, int width, int height, int type) throws IOException {
         BufferedImage yeniBoyutImage = null;
         Graphics2D g;
-        
         if (width != height) {
             if (width < height) {
-                yeniBoyutImage = new BufferedImage(width, width, type);
-                g = yeniBoyutImage.createGraphics();
-                g.drawImage(originalImage, 0, 0, width, width, null);
+                if (width % 16 != 0) {
+                    width -= width % 16;   System.out.println("width: " +width);
+                    yeniBoyutImage = new BufferedImage(width, width, type); 
+                    g = yeniBoyutImage.createGraphics();
+                    g.drawImage(originalImage, 0, 0, width, width, null);
+                } else {
+                    yeniBoyutImage = new BufferedImage(width, width, type);
+                    g = yeniBoyutImage.createGraphics();
+                    g.drawImage(originalImage, 0, 0, width, width, null);
+                }
+                
                 save(yeniBoyutImage, "jpg", 0);
                 source = resimAl("savingAnImage0.jpg");
                 //System.out.println("imgC w, h: " +source.getWidth()+", "+ source.getHeight());
